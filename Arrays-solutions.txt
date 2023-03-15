@@ -1,0 +1,35 @@
+1. Find 2 elements with given sum
+
+arr = [0, -1, 2, -3, 1] 
+s = -2 
+
+d ={}
+for i in arr:
+	remainder = s-i
+	if i in d:
+		print("Yes the pairs are: {} and {}".format(i,d[i]))
+	d[remainder]=i
+  
+2. Majority Element
+
+
+3. Find the number occuring odd number of times
+4. Merge an array of size n into another of size m + n
+5. Rotate an array
+6. Leaders in an array
+7. Majority element in sorted array
+8. Segregate 0s and 1s in an array
+9. Product array
+10. Find 2 repeating elements
+11. Find the smallest missing number
+12. Find max j-i such that arr[j] > arr[i]
+13. Find subarray with given sum
+14. Find the smallest positive number missing from an unsorted array
+15. Find 2 numbers with odd occurence
+16. Largest subarray with equal number of 0s and 1s
+17. Replace every element with the greatest on right side
+18. Stock buy sell to maximize profit
+19. Find common elements in 3 sorted arrays
+20. Nuts and bolts problem
+21. Trapping rain water
+22. Merge 2 sorted arrays in O(1) space
