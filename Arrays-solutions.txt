@@ -22,6 +22,27 @@ def majorityElement(self, A, N):
                 return key
         
         return -1
+(Moore's voting algo)
+def majorityElement(self, A, N):
+        max_ind, count = 0,0
+        
+        for i in range(len(A)):
+            if A[max_ind] == A[i]:
+                count+=1
+            else:
+                count-=1
+            if count == -1:
+                max_ind = i
+                count = 0
+                
+        count = 0
+        for i in A:
+            if i == A[max_ind]:
+                count+=1
+        if count > N/2:
+            return A[max_ind]
+    
+        return -1
 
 3. Find the number occuring odd number of times
 
