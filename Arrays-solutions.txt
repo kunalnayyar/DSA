@@ -54,6 +54,14 @@ def findSingle(self, N, arr):
 4. Merge an array of size n into another of size m + n
 
 5. Rotate an array
+arr = [1, 2, 3, 4, 5]
+d = 2 % len(arr)
+
+arr = arr[:len(arr)][::-1]
+arr[0:d] = arr[:d][::-1]
+arr[d:len(arr)] = arr[d:len(arr)][::-1]
+print(arr)
+
 6. Leaders in an array
 7. Majority element in sorted array
 8. Segregate 0s and 1s in an array
